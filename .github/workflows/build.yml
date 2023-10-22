@@ -8,13 +8,13 @@ jobs:
       - name: Lint
         run: bun lint
       - name: Check formatting
-        run: bun prettier --check .
+        run: bun fmt:check
   test:
     runs-on: ubuntu-latest
     steps:
       - uses: mskelton/setup-bun@v1
       - name: Test
-        run: bun test
+        run: bun run test
   release:
     needs: [lint, test]
     runs-on: ubuntu-latest

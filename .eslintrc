@@ -1,3 +1,7 @@
 {
-  "extends": ["@mskelton", "@mskelton/eslint-config/vitest"]
+  "extends": [
+    "@mskelton",
+    "@mskelton/eslint-config/react",
+    "@mskelton/eslint-config/vitest"
+  ]
 }

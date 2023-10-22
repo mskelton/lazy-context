@@ -1,6 +1,6 @@
 # React Lazy Context
 
-[![Build status](https://github.com/mskelton/npm-template/workflows/Build/badge.svg)](https://github.com/mskelton/npm-template/actions)
+[![Build status](https://github.com/mskelton/lazy-context/workflows/Build/badge.svg)](https://github.com/mskelton/npm-template/actions)
 
 A thin layer on top of React context that supports "lazy subscription" to only
 re-render when the data you care about changes.
@@ -23,6 +23,12 @@ yarn add lazy-context
 
 ```bash
 pnpm add lazy-context
+```
+
+**bun**
+
+```bash
+bun add lazy-context
 ```
 
 ## How does it work?

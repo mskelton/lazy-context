@@ -51,6 +51,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-sort": "^2.10.0",
     "eslint-plugin-vitest": "^0.2.8",
+    "jsdom": "^22.1.0",
     "prettier": "^3.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -58,8 +59,5 @@
     "tsup": "^7.2.0",
     "typescript": "^5.1.6",
     "vitest": "^0.34.2"
-  },
-  "dependencies": {
-    "jsdom": "^22.1.0"
   }
 }

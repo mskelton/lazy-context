@@ -11,7 +11,7 @@ re-render when the data you care about changes.
 **npm**
 
 ```bash
-npm add lazy-context
+npm install lazy-context
 ```
 
 **Yarn**

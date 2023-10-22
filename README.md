@@ -1,6 +1,7 @@
-# React Lazy Context
+# Lazy Context
 
 [![Build status](https://github.com/mskelton/lazy-context/workflows/Build/badge.svg)](https://github.com/mskelton/npm-template/actions)
+[![npm](https://img.shields.io/npm/v/lazy-context)](https://www.npmjs.com/package/lazy-context)
 
 A thin layer on top of React context that supports "lazy subscription" to only
 re-render when the data you care about changes.

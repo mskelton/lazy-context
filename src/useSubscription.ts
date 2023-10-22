@@ -7,7 +7,7 @@ export function useSubscription<T extends Record<string, unknown>>(
   const subscriptions = useRef(new Map<string, () => void>())
   // We are using this state to force a re-render when the store changes. Not
   // actually used outside of that.
-  const [_, setKey] = useState(0)
+  const [_, setRerenderKey] = useState(0)
 
   useEffect(() => {
     const subs = subscriptions.current
@@ -26,7 +26,9 @@ export function useSubscription<T extends Record<string, unknown>>(
       if (!subscriptions.current.has(key)) {
         subscriptions.current.set(
           key,
-          store.subscribe(key, () => setKey((key) => key + 1)),
+          store.subscribe(key, () => {
+            setRerenderKey((renderKey) => renderKey + 1)
+          }),
         )
       }
 

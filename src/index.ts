@@ -1,1 +1,4 @@
-export { createLazyContext } from "./createLazyContext.js"
+export {
+  createLazyContext,
+  type LazyContextProviderProps,
+} from "./createLazyContext.js"

@@ -1,7 +1,7 @@
 import React, {
-  Context,
+  type Context,
   createContext,
-  Provider,
+  type Provider,
   useContext,
   useEffect,
   useMemo,
@@ -9,7 +9,7 @@ import React, {
 import { Store } from "./Store.js"
 import { useSubscription } from "./useSubscription.js"
 
-interface LazyContextProviderProps<T extends Record<string, unknown>> {
+export interface LazyContextProviderProps<T extends Record<string, unknown>> {
   children: React.ReactNode
   value: T
 }

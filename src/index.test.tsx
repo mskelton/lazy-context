@@ -1,8 +1,8 @@
 /* eslint-disable vitest/max-expects */
 import { render, renderHook, screen } from "@testing-library/react"
-import React, { memo, useMemo } from "react"
+import { memo, useMemo } from "react"
 import { describe, expect, it, vi } from "vitest"
-import { createLazyContext } from "./createLazyContext.js"
+import { createLazyContext } from "./index.js"
 
 describe("createLazyContext", () => {
   it("should work with the default context value", () => {

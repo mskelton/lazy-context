@@ -28,7 +28,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --format esm --dts --minify --clean --sourcemap",
+    "build": "tsup src/index.tsx --format esm --dts --clean --sourcemap",
     "lint": "eslint .",
     "fmt": "prettier --write .",
     "fmt:check": "prettier --write .",

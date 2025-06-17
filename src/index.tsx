@@ -65,16 +65,17 @@ export class Store<TValue extends Record<string, unknown>> {
    * Set the value of the store.
    */
   set(value: TValue) {
+    const oldValue = this.value
+    this.value = value
+
     // When the value changes, iterate through the object comparing it's
     // values and only calling the subscriptions for the keys that have
     // changed.
     Object.entries(value).forEach(([key, value]) => {
-      if (this.#subscriptions.has(key) && value !== this.value[key]) {
+      if (this.#subscriptions.has(key) && value !== oldValue[key]) {
         this.#subscriptions.get(key)?.forEach((callback) => callback())
       }
     })
-
-    this.value = value
   }
 
   /**
